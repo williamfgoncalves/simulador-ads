@@ -1,10 +1,8 @@
-package com.company.v2;
-
 import java.util.List;
 
-public class MainV2 {
+public class Main {
 
-    static String csvPath = "C:\\Users\\alvaro.schmidt\\Documents\\Alvaro\\feevs\\Analise_Desempenho_Sistemas\\CRM.csv";
+    static String csvPath = "C:\\Users\\vinicius\\IdeaProjects\\simulador-ads\\src\\dados\\dados.csv";
 
     public static void main(String[] args) {
         LeitorRegistro leitor = new LeitorRegistro();

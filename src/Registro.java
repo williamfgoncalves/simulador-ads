@@ -1,12 +1,11 @@
-package com.company.v2;
-
 import java.time.LocalDateTime;
 
 public class Registro {
 
     private String protocolo;
     private LocalDateTime dataHoraAbertura;
-    private LocalDateTime dataHoraEncerramento;
+    private Long tempoAtendimento;
+    private String modulo;
 
     public String getProtocolo() {
         return protocolo;
@@ -24,11 +23,19 @@ public class Registro {
         this.dataHoraAbertura = dataHoraAbertura;
     }
 
-    public LocalDateTime getDataHoraEncerramento() {
-        return dataHoraEncerramento;
+    public Long getTempoAtendimento() {
+        return tempoAtendimento;
     }
 
-    public void setDataHoraEncerramento(LocalDateTime dataHoraEncerramento) {
-        this.dataHoraEncerramento = dataHoraEncerramento;
+    public void setTempoAtendimento(Long tempoAtendimento) {
+        this.tempoAtendimento = tempoAtendimento;
+    }
+
+    public String getModulo() {
+        return modulo;
+    }
+
+    public void setModulo(String modulo) {
+        this.modulo = modulo;
     }
 }
