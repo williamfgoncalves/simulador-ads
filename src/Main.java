@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.awt.*;
 import java.util.List;
 
 public class Main {
@@ -8,7 +10,17 @@ public class Main {
         LeitorRegistro leitor = new LeitorRegistro();
         final List<Registro> registros = leitor.lerRegistros(csvPath);
 
-        GeradorAtendimento gerador = new GeradorAtendimento(registros);
+        JFrame jframe = new JFrame("Simulador");
+
+        FormPrincipal formPrincipal = new FormPrincipal();
+
+        jframe.setContentPane(formPrincipal.panel1);
+        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jframe.pack();
+        jframe.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        jframe.setVisible(true);
+
+        GeradorAtendimento gerador = new GeradorAtendimento(registros, formPrincipal);
         gerador.start();
     }
 }

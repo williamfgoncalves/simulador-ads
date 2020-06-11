@@ -4,6 +4,7 @@ public class Registro {
 
     private String protocolo;
     private LocalDateTime dataHoraAbertura;
+    private LocalDateTime dataHoraInicioAtendimento;
     private Long tempoAtendimento;
     private String modulo;
 
@@ -21,6 +22,14 @@ public class Registro {
 
     public void setDataHoraAbertura(LocalDateTime dataHoraAbertura) {
         this.dataHoraAbertura = dataHoraAbertura;
+    }
+
+    public LocalDateTime getDataHoraInicioAtendimento() {
+        return dataHoraInicioAtendimento;
+    }
+
+    public void setDataHoraInicioAtendimento(LocalDateTime dataHoraInicioAtendimento) {
+        this.dataHoraInicioAtendimento = dataHoraInicioAtendimento;
     }
 
     public Long getTempoAtendimento() {
